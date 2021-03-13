@@ -16,3 +16,6 @@ According to docs.github under https://docs.github.com/en/rest/guides/getting-st
  
 All commands request the password to be entered. I have tried using the email address used for Github as well as the Github user for your_username and I have omitted and added the GitHub user for <username\>. None of them work. ----  I have the feeling something needs to be enabled or disabled on GitHubs end in order for this to work.       
 I am using MacOS 10.12.6 ( Id like to update, but can not anymore), curl release date 2020-01-08, git 2.14.3, python 3.9.2, requests 2020.12.5
+
+Exercise 02_02
+https://developers.google.com/chart/interactive/docs/basic_load_libs
