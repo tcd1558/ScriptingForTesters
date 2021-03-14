@@ -63,15 +63,15 @@ Note: Use Clipboard icon. Replace label with $labels and data with $data
 
 https://developers.google.com/chart/interactive/docs/basic_draw_chart
 
-// Instantiate and draw our chart, passing in some options.
-      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-      chart.draw(data, options);
+> // Instantiate and draw our chart, passing in some options.      
+>       var chart = new google.visualization.PieChart(document.getElementById('chart_div'));       
+>       chart.draw(data, options);      
 
 Note: The var should be alligned with the var data. Not the cause of 
 	the problem.
 
-//Div that will hold the pie chart
-    <div id="chart_div" style="width:400; height:300"></div>
+> //Div that will hold the pie chart     
+>     <div id="chart_div" style="width:400; height:300"></div>     
 
 Note: If you leave the comment '//Div ..', it will be displayed on the output. 
 
