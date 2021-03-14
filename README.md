@@ -33,12 +33,12 @@ Comparing the two shows the flowing differences (Notes).
 
 https://developers.google.com/chart/interactive/docs/basic_load_libs
 
-> <script src="https://www.gstatic.com/charts/loader.js"></script>
-> <script>
->   google.charts.load('current', {packages: ['corechart']});
->   google.charts.setOnLoadCallback(drawChart);
->   ...
-> </script>
+> <script src="https://www.gstatic.com/charts/loader.js"></script>     
+> <script>     
+>   google.charts.load('current', {packages: ['corechart']});      
+>   google.charts.setOnLoadCallback(drawChart);      
+>   ...      
+> </script>    
 
 Note: The solution includes <script type="text/javascript" ..
 	This is also included on the developers page in the video. 
