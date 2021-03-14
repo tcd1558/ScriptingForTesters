@@ -40,25 +40,26 @@ https://developers.google.com/chart/interactive/docs/basic_load_libs
 >   ...      
 > </script>    
 
-Note: The solution includes <script type="text/javascript" ..
+Note: The solution includes '<script type="text/javascript" ..'
 	This is also included on the developers page in the video. 
-	Yet, on the current developers page the 'type=".."' is missing. 
+	Yet, on the current developers page the 'type=".."' is missing.
+	This is not the cause of the problem.    
 
 https://developers.google.com/chart/interactive/docs/datatables_dataviews
 https://developers.google.com/chart/interactive/docs/datatables_dataviews#arraytodatatable
 
-var data = google.visualization.arrayToDataTable([
-       ['Employee Name', 'Salary'],
-       ['Mike', {v:22500, f:'22,500'}], // Format as "22,500".
-       ['Bob', 35000],
-       ['Alice', 44000],
-       ['Frank', 27000],
-       ['Floyd', 92000],
-       ['Fritz', 18500]
-      ],
-      false); // 'false' means that the first row contains labels, not data.
+> var data = google.visualization.arrayToDataTable([     
+>        ['Employee Name', 'Salary'],      
+>        ['Mike', {v:22500, f:'22,500'}], // Format as "22,500".      
+>        ['Bob', 35000],      
+>        ['Alice', 44000],      
+>        ['Frank', 27000],      
+>        ['Floyd', 92000],      
+>        ['Fritz', 18500]     
+>       ],      
+>       false); // 'false' means that the first row contains labels, not data.      
 
-Note: Use Clipboard icon. Replace label with $labels and date with $data 
+Note: Use Clipboard icon. Replace label with $labels and data with $data 
 
 https://developers.google.com/chart/interactive/docs/basic_draw_chart
 
