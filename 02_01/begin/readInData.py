@@ -10,6 +10,13 @@ with open('TestTimingData.csv') as csv_file:
     for row in file_reader:
         timing_data.append(row)
 
+# The data set timing_data includes the test name, run time, and the average run time for this test.
+# Create 2 new data sets;
+# A data set table_data with the test name and the run time
+# A data set column_chart_data with the test name and the run time difference from the average
+
+# Define the headers for
+# column_chart_data and table_data
 column_chart_data= [["Test Name", "Diff from Avg"]]
 table_data = [["Test Name", "Run Time (s)"]]
 
