@@ -23,8 +23,37 @@ for row in timing_data[1:]:
     column_chart_data.append([test_name,diff_from_avg])
     table_data.append([test_name,current_run_time])
 
+from string import Template
 
-completed_html = 
+html_string = Template("""<html>
+<head>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script>
+  google.charts.load('current', {packages: ['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart () {
+    var data = google.visualization.arrayToDataTable([
+       $labels,
+       $data
+      ],
+      false); // 'false' means that the first row contains labels, not data.
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+      chart.draw(data);
+  }
+</script>
+</head>
+<body>
+<div id="chart_div" style="width:800; height:600"></div>
+</body>
+</html>""")
+
+chart_data_str = ''
+for row in column_chart_data[1:]:
+        #chart_data_str +=  '%s, \n,'%row # observe the ',' after the \n
+        chart_data_str +=  '%s, \n'%row   # an extra ' ' does not harm the output
+        #chart_data_str += '%s,\n' % row  # from the solution
+completed_html = html_string.substitute(labels=column_chart_data[0], data=chart_data_str)
 
 with open('column_chart.html','w') as f:
     f.write(completed_html)
