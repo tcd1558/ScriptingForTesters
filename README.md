@@ -7,6 +7,11 @@ This allows you to start with a fresh GitHub repository with the basics of a PyC
 
 ## In Section 1, Authentication
 
+In this section you learn about GET, POST, PUT, DELETE
+
+You also learn about authentication with get(url, auth=('djw-test', 'password1')) 
+or the use of a token. 
+
 I have the feeling there is still something missing. Maybe this kind of authentication has been disabled and OAuth is now the standard.      
 According to docs.github under https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api#authentication you can access your GitHub account using curl. I have tried using the following curl commands:
 
@@ -22,7 +27,7 @@ The following command:
 
 does return data. Apparently from 'all' users, not including self. 
 
-## Exercise 02_02
+## Section 2, Exercise 02_02
 
 Problem: 
 When loading ../begin/column_chart.html, the result is an empty page. 
