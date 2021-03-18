@@ -85,3 +85,88 @@ Next you create a for loop. Make sure, the assignment of chart_data_str does
 	The extra blank is not a problem, because it does not alter the number 
 	of elements. 
 
+## 02.05 Google Developers API
+
+You need a Google account
+Create a Google Service Account
+
+https://console.developers.google.com/apis/dashboard
+Create a project
+
+Either use the pull down menu [Select a project v] 
+	New Project (up to 12)
+or click on [CREATE PROJECT] to the right. 
+
+Project Name: TestProject64137
+[CREATE]
++ ENABLE APIS AND SERVICES
+
+Search for Sheets
+[ENABLE]
+Back, Back
+Search for Drive
+Select Googe Drive API
+[ENABLE]
+
+In 'RPI APIs & Services' click on 
+Dashboard
+
+Credentials
+[+ CREATE CREDENTIALS]
+Service account
+Section 1: Service account details
+	Service account name: ScriptAccount
+	Service account ID: scriptaccount@testproject64137.iam.gserviceaccount.com
+	Role - Project, Editor - moved to section 2 
+	Key Type - JSON - no longer available.
+	[Create]
+
+Section 2: Grant this service account access to project 
+(optional)
+
+[Select a role v]
+	Basic, Editor
+[CONTINUE]
+
+Section 3: Grant users access to this service account
+(optional) 
+	Learn more:
+https://cloud.google.com/iam/docs/service-accounts
+https://cloud.google.com/iam/docs/impersonating-service-accounts?_ga=2.193283823.-396094699.1615679811
+
+	Service account users role: skip since optional
+	Service account admins role: skip since optional
+
+[DONE]
+
+After click on the last [DONE] above, you get a table with 'API Keys', 'OAuth 2.0 Client IDs', 'Service Accounts'. 
+Under the header 'Service Accounts', you found the just created Service Account.
+Clicking on the Service Account brings up a new screen with a tab 'Keys'. 
+Open that tab 'Keys'
+
+[Add Key v]
+Create new key
+(o)JSON
+
+A file is downloaded. 
+
+https://www.google.com/sheets/about/
+
+Start a new spreadsheet, Blank
+
+--------------------------------------------------------------------------------
+
+Section 02_06
+
+Use the pip3 in the same path as python3.
+The python3 used in Pycharm is defined by the link in venv/bin/python3
+/usr/local/bin/pip3 install gspread
+/usr/local/bin/pip3 install google-api-python-client
+/usr/local/bin/pip3 install oauth2client
+Prefereably install through PyCharm 
+
+pip3 list -- gives a list
+pip3 show -- gives details from one module
+
+
+https://gspread.readthedocs.io
