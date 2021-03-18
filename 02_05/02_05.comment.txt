@@ -1,0 +1,102 @@
+
+Under the Overview tab you provide 'Exercise Files' and 'Certificates'. It would be nice if you could collect the workarounds for all the changes since you recorded the video.  E.g. Section 02_05 - the setup of the Google APIs & Services Credentials has changed. 
+
+
+
+Here are my notes so far:
+
+In 'RPI APIs & Services' click on
+
+Dashboard
+
+
+
+Credentials
+
+[+ CREATE CREDENTIALS]
+
+Service account
+
+Section 1: Service account details
+
+Service account name: ScriptAccount
+
+Service account ID: scriptaccount@<ProjectName>.iam.gserviceaccount.com
+
+Role - Project, Editor - moved to section 2
+
+Key Type - JSON - no longer available.
+
+[Create]
+
+
+
+Section 2: Grant this service account access to project
+
+(optional)
+
+
+
+[Select a role v]
+
+Basic, Editor
+
+[CONTINUE]
+
+
+
+Section 3: Grant users access to this service account
+
+(optional)
+
+
+
+Service account users role: skip since optional
+
+Service account admins role: skip since optional
+
+
+
+[DONE]
+
+
+
+-----------
+
+I am currently reading some of the docs from section 3 'Learn more'. I am trying to find answers on:
+
+Key Type - JSON - where has it gone to? 
+
+Service account users role: Do I need this? 
+
+Service account admins role: Do I need this?
+
+
+
+After click on the last [DONE] above, I get a table with 'API Keys', 'OAuth 2.0 Client IDs', 'Service Accounts'. Under this last header, I found my just created Service Account. Clicking on the Service Account brings up a new screen with a tab 'Keys'. I assume I have to create my JSON key there. But before I get to that, let's finish reading 'Learn more' docs. 
+
+
+
+P.S.1 - I hope hitting [Post] does not screw up my layout. 
+
+P.S.2 - Thanks for looking into our Q&A's. 
+
+P.S.3 - Notice I replaced my project name with <ProjectName>. Maybe you could make the exercises with confidential information available to us with the confidential information in a variable or with a placeholder like my <ProjectName> and a comment in the code, that you have to replace this with your own.
+
+
+Service account users role: Do I need this?
+Service account admins role: Do I need this?
+
+As this is optional, just ignore these field. 
+
+Instructions to get the JSON key:
+After click on the last [DONE] above, you get a table with 'API Keys', 'OAuth 2.0 Client IDs', 'Service Accounts'.
+Under the header 'Service Accounts', you found the just created Service Account.
+Clicking on the Service Account brings up a new screen with a tab 'Keys'.
+Open that tab 'Keys'
+
+[Add Key v]
+Create new key
+(o)JSON
+
+A file is downloaded.
