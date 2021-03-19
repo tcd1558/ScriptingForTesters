@@ -97,7 +97,7 @@ Either use the pull down menu [Select a project v]
 	New Project (up to 12)
 or click on [CREATE PROJECT] to the right. 
 
-Project Name: TestProject64137
+Project Name: <MyProject>
 [CREATE]
 + ENABLE APIS AND SERVICES
 
@@ -116,7 +116,7 @@ Credentials
 Service account
 Section 1: Service account details
 	Service account name: ScriptAccount
-	Service account ID: scriptaccount@testproject64137.iam.gserviceaccount.com
+	Service account ID: scriptaccount@<MyProject>.iam.gserviceaccount.com
 	Role - Project, Editor - moved to section 2 
 	Key Type - JSON - no longer available.
 	[Create]
