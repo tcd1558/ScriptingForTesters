@@ -168,7 +168,6 @@ Prefereably install through PyCharm
 pip3 list -- gives a list
 pip3 show -- gives details from one module
 
-
 https://gspread.readthedocs.io
 --------------------------------------------------------------------------------
 
@@ -186,4 +185,10 @@ Convert Average Run Time to '=Average(C2:G2)'
 
 [Share] scriptaccount@<MyProject>.iam.gserviceaccount.com
 
+--------------------------------------------------------------------------------
 
+Section 03_01
+
+Open the SeleniumExample.py
+import selenium from webdriver
+Hover the mouse over selenium and install 
