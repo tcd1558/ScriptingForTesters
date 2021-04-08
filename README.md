@@ -170,3 +170,20 @@ pip3 show -- gives details from one module
 
 
 https://gspread.readthedocs.io
+--------------------------------------------------------------------------------
+
+Section 02_07
+
+Create a new spreadsheet under https://docs.google.com/spreadsheets
+Name it TestRunData
+Import 
+(0) replace current sheet
+(0) Comma
+(0) Yes
+[Import data]
+
+Convert Average Run Time to '=Average(C2:G2)'
+
+[Share] scriptaccount@<MyProject>.iam.gserviceaccount.com
+
+

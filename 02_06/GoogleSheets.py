@@ -8,7 +8,10 @@ client = gspread.authorize(creds)
 sheet = client.open('ServiceAccountTest').sheet1
 
 sheet.update_cell(1,1,"test")
-print(sheet.row_values(1))
+# https://gspread.readthedocs.io/en/latest/user-guide.html#getting-a-cell-value
+print('row values: ',sheet.row_values(1))
+print('call value: ', sheet.acell('A1').value)
+print('cell coordinate value: ', sheet.cell(1,1).value)
 print()
 print(sheet.get_all_values())
 
