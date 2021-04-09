@@ -171,7 +171,7 @@ pip3 show -- gives details from one module
 https://gspread.readthedocs.io
 --------------------------------------------------------------------------------
 
-Section 02_07
+## Section 02_07
 
 Create a new spreadsheet under https://docs.google.com/spreadsheets
 Name it TestRunData
@@ -187,8 +187,23 @@ Convert Average Run Time to '=Average(C2:G2)'
 
 --------------------------------------------------------------------------------
 
-Section 03_01
+## Section 03_01
 
 Open the SeleniumExample.py
 import selenium from webdriver
 Hover the mouse over selenium and install 
+
+--------------------------------------------------------------------------------
+
+## Section 03_02
+
+https://www.seleniumhq.org has been moved to https://www.selenium.dev
+The layout of the page has changed. 
+
+--------------------------------------------------------------------------------
+
+## Section 03_03
+
+http://www.phptravels.net/offers is no longer a test site. They do no appreciate the testing traffic. 
+
+
