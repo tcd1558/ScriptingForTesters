@@ -205,5 +205,6 @@ The layout of the page has changed.
 ## Section 03_03
 
 http://www.phptravels.net/offers is no longer a test site. They do no appreciate the testing traffic. 
+The layout of the page has changed. Section 03_03 no longer works.
 
 
