@@ -17,7 +17,8 @@ for row in all_values[1:]:
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-driver = webdriver.Chrome()
+#driver = webdriver.Chrome()
+driver = webdriver.Chrome(executable_path='/Users/marco/PycharmProjects/ScriptingForTesters_TM/chromedriver')
 
 driver.get('http://opensource.demo.orangehrmlive.com/index.php/leave/assignLeave')
 

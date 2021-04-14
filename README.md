@@ -207,4 +207,26 @@ The layout of the page has changed.
 http://www.phptravels.net/offers is no longer a test site. They do no appreciate the testing traffic. 
 The layout of the page has changed. Section 03_03 no longer works.
 
+--------------------------------------------------------------------------------
 
+## Section 03_04
+
+The instructions used to click on the 'Add to Cart' and 'Continue shopping' now return with a message 'element not interactable'
+
+It looks like, this course is trying to rely on a moving target. Just out of curiosity, it this due to changes in the chromedriver or the selenium import? 
+I could make it work for the first item with:      
+driver.find_element_by_css_selector('a.button.ajax_add_to_cart_button.btn.btn-default').click()      
+but this failed on the second item with 'element not interactable'.    
+For the 'Continue shopping' button, I used:      
+driver.find_element_by_css_selector('span.continue.btn.btn-default.button.exclusive-medium').click()       
+but I could not confirm this for the second button. 
+
+--------------------------------------------------------------------------------
+
+## Section 04_02
+
+This section uses the following website:      
+http://opensource.demo.orangehrmlive.com/index.php/leave/assignLeave
+The script terminates with:      
+selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  
